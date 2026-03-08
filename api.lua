@@ -55,7 +55,7 @@ function letters.register_letters(modname, subname, from_node, description, tile
 	basedef.legacy_wallmounted = false
 
 	-- Register a new node for each letter using the provided from_node as the material.
-	for _, tile in ipairs(core.get_dir_list(letterspath .. "/textures", false)) do
+	for _, tile in ipairs(files) do
 		local char, group = tile:match("_([%d%u%l])(%l)_overlay")
 		if char and group then
 			local def = table.copy(basedef)

@@ -318,7 +318,7 @@ function letter_cutter.on_receive_fields(pos, _formname, fields, sender)
 end
 
 core.register_node("letters:letter_cutter_lower",  {
-	description = "Lower Case Leter Cutter",
+	description = "Lower Case Letter Cutter",
 	drawtype = "nodebox",
 	node_box = {
 		type = "fixed",
@@ -376,7 +376,7 @@ core.register_craft({
 })
 
 core.register_node("letters:letter_cutter_upper",  {
-	description = "Upper Case Leter Cutter",
+	description = "Upper Case Letter Cutter",
 	drawtype = "nodebox",
 	node_box = {
 		type = "fixed",
